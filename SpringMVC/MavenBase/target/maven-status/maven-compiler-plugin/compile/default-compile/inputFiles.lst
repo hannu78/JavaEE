@@ -1,3 +1,9 @@
-C:\JavaEE\MavenBase\src\main\java\com\base\config\Config.java
-C:\JavaEE\MavenBase\src\main\java\com\base\controller\DefaultController.java
-C:\JavaEE\MavenBase\src\main\java\com\base\config\WebInitializer.java
+C:\Users\Ohjelmistokehitys\Documents\GITworkarea\JavaEE\SpringMVC\MavenBase\src\main\java\com\base\DAO\TeacherDAO.java
+C:\Users\Ohjelmistokehitys\Documents\GITworkarea\JavaEE\SpringMVC\MavenBase\src\main\java\com\base\models\Course.java
+C:\Users\Ohjelmistokehitys\Documents\GITworkarea\JavaEE\SpringMVC\MavenBase\src\main\java\com\base\models\Students.java
+C:\Users\Ohjelmistokehitys\Documents\GITworkarea\JavaEE\SpringMVC\MavenBase\src\main\java\com\base\config\Config.java
+C:\Users\Ohjelmistokehitys\Documents\GITworkarea\JavaEE\SpringMVC\MavenBase\src\main\java\com\base\models\Teachers.java
+C:\Users\Ohjelmistokehitys\Documents\GITworkarea\JavaEE\SpringMVC\MavenBase\src\main\java\com\base\config\WebInitializer.java
+C:\Users\Ohjelmistokehitys\Documents\GITworkarea\JavaEE\SpringMVC\MavenBase\src\main\java\com\base\controller\DefaultController.java
+C:\Users\Ohjelmistokehitys\Documents\GITworkarea\JavaEE\SpringMVC\MavenBase\src\main\java\com\base\models\RelTable.java
+C:\Users\Ohjelmistokehitys\Documents\GITworkarea\JavaEE\SpringMVC\MavenBase\src\main\java\com\base\util\HibernateUtil.java

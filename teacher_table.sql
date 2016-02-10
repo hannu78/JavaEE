@@ -8,3 +8,5 @@ CREATE TABLE teachers(
 ) Engine=InnoDb;
 
 DROP TABLE teachers;
+
+SELECT * FROM teachers;
