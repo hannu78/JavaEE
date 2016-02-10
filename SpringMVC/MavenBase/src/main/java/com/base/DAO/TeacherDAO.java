@@ -27,6 +27,7 @@ public class TeacherDAO {
         Transaction transaction = session.beginTransaction();
         System.out.println("Save teacher to database " + teacher.getTName());
         session.save(teacher);
+        transaction.commit();
         // Release session
         session.close();
     }
