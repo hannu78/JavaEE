@@ -5,7 +5,7 @@ CREATE TABLE teachers(
     phone varchar(255),
     t_subject varchar(255) DEFAULT "generic substitute",
     PRIMARY KEY (_id)
-) Engine=InnoDb;
+) Engine=InnoDb DEFAULT CHARSET=utf8;
 
 DROP TABLE teachers;
 

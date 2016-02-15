@@ -5,7 +5,7 @@ CREATE TABLE students (
     enail varchar(255),
     phone varchar(255),
     PRIMARY KEY (_id)
-) Engine=InnoDb;
+) Engine=InnoDb DEFAULT CHARSET=utf8;
 
 DROP TABLE students;
     

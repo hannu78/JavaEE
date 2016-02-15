@@ -4,6 +4,6 @@ CREATE TABLE course (
     grade float,
     c_info text, 
     PRIMARY KEY (_id)
-) Engine=InnoDb;
+) Engine=InnoDb DEFAULT CHARSET=utf8;
 
 DROP TABLE course;

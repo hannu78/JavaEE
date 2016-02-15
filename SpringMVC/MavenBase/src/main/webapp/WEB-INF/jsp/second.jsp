@@ -10,24 +10,28 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="resources/css/styles.css" />
+        <link rel="stylesheet" href="/resources/css/bootstrap.min.css"/>
         <title>JSP Page 2</title>
     </head>
     <body>
-        <h1>Add new teacher</h1>
-        <form:form action="/teacher" method="POST" modelAttribute="teacher">
-            <form:label path="">Name </form:label>
-            <form:input path="TName"></form:input><br/>
-            <form:label path="">Email </form:label>
-            <form:input path="email"></form:input><br/>
-            <form:label path="">Phone </form:label>
-            <form:input path="phone"></form:input><br/>
-            <form:label path="">Subject </form:label>
-            <form:input path="TSubject"></form:input><br/>
-            <input type="submit" value="Save teacher information"/>
-        </form:form>
+        <div class="form-group">
+            <h1>Add new teacher</h1>
+            <form:form action="/teacher" method="POST" modelAttribute="teacher">
+                <form:label path="">Name </form:label>
+                <form:input path="TName"></form:input><br/>
+                <form:label path="">Email </form:label>
+                <form:input path="email"></form:input><br/>
+                <form:label path="">Phone </form:label>
+                <form:input path="phone"></form:input><br/>
+                <form:label path="">Subject </form:label>
+                <form:input path="TSubject"></form:input><br/>
+                <input type="submit" value="Save teacher information"/>
+            </form:form>
+        </div>
         <p>${save_info}</p>
-        <table>
+        <table class="table">
             <thead>
                 <tr>
                     <th>Name</th><th>Email</th><th>Phone</th><th>Subject</th>

@@ -7,6 +7,6 @@ CREATE TABLE rel_table(
     FOREIGN KEY(c_id) REFERENCES course(_id),
     FOREIGN KEY(s_id) REFERENCES students(_id),
     FOREIGN KEY(t_id) REFERENCES teachers(_id)
-) Engine=InnoDb;
+) Engine=InnoDb DEFAULT CHARSET=utf8;
 
 DROP TABLE rel_table;
