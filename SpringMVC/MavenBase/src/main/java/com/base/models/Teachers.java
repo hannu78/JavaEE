@@ -71,6 +71,12 @@ public class Teachers  implements java.io.Serializable {
     public void setRelTables(Set relTables) {
         this.relTables = relTables;
     }
+    public void clearAttributes() {
+        this.setTName("");
+        this.setEmail("");
+        this.setPhone("");
+        this.setTSubject("");
+    }
 
 
 

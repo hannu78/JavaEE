@@ -12,4 +12,5 @@ DROP TABLE user;
 
 INSERT INTO user (username, password, enabled) values("admin", "admin", 1);
 
+
 SELECT * FROM user;

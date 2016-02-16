@@ -39,14 +39,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             //http.headers().defaultsDisabled();
             System.out.println("CONFIGURE HTTPSECURITY");
             http.authorizeRequests().antMatchers("/").permitAll()
-            .antMatchers("/second").access("hasRole('ROLE_ADMIN')")
-            .antMatchers("/teacher").access("hasRole('ADMIN')")
+            .antMatchers("/admin/**").access("hasRole('ROLE_ADMIN')")
+            .antMatchers("/teacher/**").access("hasRole('ROLE_TEACHER') or hasRole('ROLE_ADMIN')")
+            .antMatchers("/student/**").access("hasRole('ROLE_STUDENT') or hasRole('ROLE_ADMIN')")
             .and().formLogin()
-            .defaultSuccessUrl("/second")
-            .loginPage("/login").failureUrl("/login?error")
+            .defaultSuccessUrl("/admin/second")
+            .loginPage("/login").failureUrl("/login/error")
             .usernameParameter("username")
             .passwordParameter("password").and()
-            .logout().logoutSuccessUrl("/login?logout")
+            .logout().logoutSuccessUrl("/login/logout")
             .and().csrf()
             .and().exceptionHandling().accessDeniedPage("/403");
     }

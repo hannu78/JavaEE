@@ -14,7 +14,7 @@ public class Students  implements java.io.Serializable {
      private Integer id;
      private String SName;
      private String address;
-     private String enail;
+     private String email;
      private String phone;
      private Set relTables = new HashSet(0);
 
@@ -26,10 +26,10 @@ public class Students  implements java.io.Serializable {
         this.SName = SName;
         this.address = address;
     }
-    public Students(String SName, String address, String enail, String phone, Set relTables) {
+    public Students(String SName, String address, String email, String phone, Set relTables) {
        this.SName = SName;
        this.address = address;
-       this.enail = enail;
+       this.email = email;
        this.phone = phone;
        this.relTables = relTables;
     }
@@ -55,12 +55,12 @@ public class Students  implements java.io.Serializable {
     public void setAddress(String address) {
         this.address = address;
     }
-    public String getEnail() {
-        return this.enail;
+    public String getEmail() {
+        return this.email;
     }
     
-    public void setEnail(String enail) {
-        this.enail = enail;
+    public void setEmail(String email) {
+        this.email = email;
     }
     public String getPhone() {
         return this.phone;
@@ -75,6 +75,12 @@ public class Students  implements java.io.Serializable {
     
     public void setRelTables(Set relTables) {
         this.relTables = relTables;
+    }
+    public void clearAttributes() {
+        this.setSName("");
+        this.setAddress("");
+        this.setEmail("");
+        this.setPhone("");
     }
 
 

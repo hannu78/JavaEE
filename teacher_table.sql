@@ -10,3 +10,7 @@ CREATE TABLE teachers(
 DROP TABLE teachers;
 
 SELECT * FROM teachers;
+
+INSERT INTO user (username, password, enabled) values("admin", "admin", 1);
+
+INSERT INTO teachers (t_name, email, phone, t_subject) VALUES ("Matti Määttä", "matti@maatta.fi", "050-3455667", "Physics");
