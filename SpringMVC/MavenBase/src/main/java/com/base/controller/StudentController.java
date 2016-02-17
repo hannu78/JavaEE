@@ -21,6 +21,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class StudentController {
     @RequestMapping(value="/admin/student", method=RequestMethod.GET)
     public String renderStudent(ModelMap map) {
+        try {
+            map.addAttribute("students", StudentDAO.getStudents());
+        } catch (Exception e) {
+            map.addAttribute("save_info", "List generation failed.");
+            e.printStackTrace();
+        }
+        map.addAttribute("student", new Students());
         return "student";
     }
     @RequestMapping(value="/admin/student", method=RequestMethod.POST)

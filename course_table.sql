@@ -7,3 +7,5 @@ CREATE TABLE course (
 ) Engine=InnoDb DEFAULT CHARSET=utf8;
 
 DROP TABLE course;
+
+SELECT * from course;

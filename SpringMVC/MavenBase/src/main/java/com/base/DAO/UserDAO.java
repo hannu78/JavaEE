@@ -21,9 +21,6 @@ public class UserDAO {
         
         List<User> lst = null;
         
-        //MIKÄ HELEVETTI TÄSSÄ MENEE PIELEEN?
-        //java.lang.NoClassDefFoundError: Could not initialize class com.base.util.HibernateUtil
-	//com.base.DAO.UserDAO.findByUserName(UserDAO.java:23)
         Session session = HibernateUtil.getSessionFactory().openSession();
         lst = session.createQuery("FROM User where username=?").
                 setParameter(0, userName).list();

@@ -10,6 +10,7 @@ com\base\models\Teachers.class
 com\base\controller\StudentController.class
 com\base\config\Config.class
 com\base\controller\DefaultController.class
+com\base\DAO\CourseDAO.class
 com\base\service\MyUserDetailsService.class
 com\base\config\SecurityWebApplicationInitializer.class
 com\base\config\SecurityConfig.class

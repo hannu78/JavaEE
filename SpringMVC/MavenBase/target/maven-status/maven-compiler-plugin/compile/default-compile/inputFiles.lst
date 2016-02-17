@@ -12,6 +12,7 @@ C:\Users\Ohjelmistokehitys\Documents\GITworkarea\JavaEE\SpringMVC\MavenBase\src\
 C:\Users\Ohjelmistokehitys\Documents\GITworkarea\JavaEE\SpringMVC\MavenBase\src\main\java\com\base\models\Teachers.java
 C:\Users\Ohjelmistokehitys\Documents\GITworkarea\JavaEE\SpringMVC\MavenBase\src\main\java\com\base\config\SecurityWebApplicationInitializer.java
 C:\Users\Ohjelmistokehitys\Documents\GITworkarea\JavaEE\SpringMVC\MavenBase\src\main\java\com\base\controller\DefaultController.java
+C:\Users\Ohjelmistokehitys\Documents\GITworkarea\JavaEE\SpringMVC\MavenBase\src\main\java\com\base\DAO\CourseDAO.java
 C:\Users\Ohjelmistokehitys\Documents\GITworkarea\JavaEE\SpringMVC\MavenBase\src\main\java\com\base\DAO\StudentDAO.java
 C:\Users\Ohjelmistokehitys\Documents\GITworkarea\JavaEE\SpringMVC\MavenBase\src\main\java\com\base\models\User.java
 C:\Users\Ohjelmistokehitys\Documents\GITworkarea\JavaEE\SpringMVC\MavenBase\src\main\java\com\base\service\MyUserDetailsService.java

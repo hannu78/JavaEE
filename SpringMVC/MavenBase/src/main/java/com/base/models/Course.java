@@ -62,9 +62,11 @@ public class Course  implements java.io.Serializable {
     public void setRelTables(Set relTables) {
         this.relTables = relTables;
     }
-
-
-
+    public void clearAttributes() {
+        this.setCName("");
+        this.setGrade(null);
+        this.setCInfo("");
+    }
 
 }
 

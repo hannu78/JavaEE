@@ -14,8 +14,8 @@
         <property name="address" type="string">
             <column name="address" not-null="true" />
         </property>
-        <property name="enail" type="string">
-            <column name="enail" />
+        <property name="email" type="string">
+            <column name="email" />
         </property>
         <property name="phone" type="string">
             <column name="phone" />

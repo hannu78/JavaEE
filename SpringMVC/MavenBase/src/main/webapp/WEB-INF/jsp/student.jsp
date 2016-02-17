@@ -15,7 +15,7 @@
         <link rel="stylesheet"type="text/css" href="/resources/css/bootstrap.min.css"/>
         <script src="/resources/js/jquery-2.1.4.min.js"></script>
         <script src="/resources/js/bootstrap.min.js"></script>
-        <title>JSP Page 2</title>
+        <title>Students</title>
     </head>
     <body>
         <%@include file="header.jsp" %>
@@ -38,17 +38,17 @@
                 </div>
             </div>
             <div class="col-md-8">
-                <h1>Teachers</h1>
+                <h1>Students</h1> 
                 <table class="table table-hover table-bordered">
                     <thead>
                         <tr>
-                            <th>Name</th><th>Address</th><th>Email</th><th>Phone</th><th>Subject</th>
+                            <th>Name</th><th>Address</th><th>Email</th><th>Phone</th>
                         </tr>
                     </thead>
                     <tbody>
                         <c:forEach var="student" items="${students}">
                             <tr>
-                                <td>${student.getTName()}</td><td>${student.getAddress()}</td><td>${student.getEmail()}</td><td>${student.getPhone()}</td>}</td>
+                                <td>${student.getSName()}</td><td>${student.getAddress()}</td><td>${student.getEmail()}</td><td>${student.getPhone()}</td>
                             </tr>
                         </c:forEach>
                     </tbody>
