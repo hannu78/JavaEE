@@ -9,4 +9,6 @@ CREATE TABLE rel_table(
     FOREIGN KEY(t_id) REFERENCES teachers(_id)
 ) Engine=InnoDb DEFAULT CHARSET=utf8;
 
+SELECT * FROM rel_table;
+
 DROP TABLE rel_table;

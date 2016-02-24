@@ -7,5 +7,7 @@ CREATE TABLE students (
     PRIMARY KEY (_id)
 ) Engine=InnoDb DEFAULT CHARSET=utf8;
 
+SELECT * FROM students;
+
 DROP TABLE students;
     

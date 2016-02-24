@@ -19,8 +19,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 @Controller
 public class StudentController {
+    private boolean studentPage = false;
     @RequestMapping(value="/admin/student", method=RequestMethod.GET)
     public String renderStudent(ModelMap map) {
+        map.addAttribute("studentPage", true);
+        map.addAttribute("isLogged", true);
         try {
             map.addAttribute("students", StudentDAO.getStudents());
         } catch (Exception e) {
@@ -44,5 +47,9 @@ public class StudentController {
             e.printStackTrace();
         }
         return "student";
+    }
+    @ModelAttribute("studentPage")
+    public boolean studentPage() {
+        return studentPage;
     }
 }

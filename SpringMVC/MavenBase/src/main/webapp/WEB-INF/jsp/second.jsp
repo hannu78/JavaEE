@@ -4,7 +4,7 @@
     Author     : Ohjelmistokehitys
 --%>
 
-<%@ page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html; charset=utf-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
@@ -23,7 +23,7 @@
             <div class="col-md-4">
                 <div class="form-group">
                     <h1>Add new teacher</h1>
-                    <form:form action="/admin/teacher" method="POST" modelAttribute="teacher">
+                    <form:form action="/admin/teacher" method="POST" modelAttribute="teacher" accept-charset="utf-8">
                         <form:label path="">Name </form:label>
                         <form:input class="form-control" path="TName"></form:input><br/>
                         <form:label path="">Email </form:label>

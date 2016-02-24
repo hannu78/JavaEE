@@ -51,9 +51,11 @@ public class DefaultController {
         return "second";
     }
     @RequestMapping(value="/admin/teacher", method=RequestMethod.POST)
-    public String addNewTeacher(@ModelAttribute ("teacher") Teachers teacher, ModelMap map) {
+    public String addNewTeacher(@ModelAttribute ("teacher") Teachers teacher, ModelMap map, HttpServletRequest request) {
         System.out.println(teacher.getTName());
         try {
+            System.out.println(teacher.getTName());
+            request.setCharacterEncoding("UTF-8");
             TeacherDAO.addTeacher(teacher);
             map.addAttribute("save_info", "Teacher added succesfully!");
             map.addAttribute("teachers", TeacherDAO.getTeachers());
@@ -64,6 +66,7 @@ public class DefaultController {
         }
         return "/second";
     }
+    /*
     @RequestMapping(value="/admin/course", method=RequestMethod.GET)
     public String listCourses(ModelMap map){
         try {
@@ -92,7 +95,7 @@ public class DefaultController {
         return "/course";
     }
     
-    
+    */
     @RequestMapping(value="/logout", method=RequestMethod.GET)
     public String logout(HttpServletRequest request, HttpServletResponse resp) {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
